@@ -17,7 +17,8 @@ FROM openjdk:8-jdk-alpine
 COPY --from=builder /app/target/*.jar /app/application.jar
 ENTRYPOINT ["java","-jar","/app/application.jar"]
 ```
-Lek med tjenesten "Cloud Run" i GCP. Lag en ny "Service" og deploy rett fra repositoriet ved hjelp av Wizarden og GitHub integrasjon  i GCP Web-grensesnittet 
+
+Det er viktig at applikasjonen er konfigurert for å lytte på en port som bestemmes av miljøvariabelen PORTLek med tjenesten "Cloud Run" i GCP. Lag en ny "Service" og deploy rett fra repositoriet ved hjelp av Wizarden og GitHub integrasjon  i GCP Web-grensesnittet. Denne videoen viser deployment rett fra GitHub til Cloud Run. https://www.youtube.com/watch?v=GhSAQ19f4HA&ab_channel=KevinSimper
 
 ## Integrasjon med Travis
 
