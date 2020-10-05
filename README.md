@@ -115,7 +115,7 @@ gcloud projects add-iam-policy-binding "${PROJECT_ID?}" \
 Run the following command
 
 ```sh
-travis encrypt-file --pro google-key.json
+travis encrypt-file google-key.json
 ```
 
 This command will print an `openssl [...]` command, **don’t lose it!**
